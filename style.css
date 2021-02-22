@@ -1,0 +1,131 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+button, button:active, button:focus {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+video {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+.app_wrapper {
+    margin: 0 auto;
+    margin-top: 45px;
+    max-width: 720px;
+    max-height: 370px;
+    padding-right: 100px;
+}
+.control_panel{
+    width: 720px;
+    height: 370px;
+    background-image: url(./images/panel-bg.png);
+}
+.control_panel > .title {
+    position: absolute;
+    width: 426px;
+    height: 117px;
+    margin-left: 195px;
+    margin-top: 75px;
+    font-size: 100px;
+    letter-spacing: 4px;
+    line-height: 75px;
+}
+.descript {
+    position: absolute;
+    width: 431px;
+    height: 40px;
+    margin-left: 199px;
+    margin-top: 142px;
+    font-size: 41px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+.ambient_btn {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 58px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ambient_btn .title {
+    position: absolute;
+    font-size: 12px;
+    color: #a292ff;
+    width: 105px;
+    height: 18px;
+    margin-left: -70px;
+    margin-top: -6px;
+    transform: rotate(-76deg);
+}
+.rain_btn{
+    width: 42px;
+    height: 42px;
+    background-image: url(./images/rain-ico.png);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.sunny_btn{
+    width: 42px;
+    height: 42px;
+    background-image: url(./images/sunny-ico.png);
+    cursor: pointer;
+}
+.chose_time {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 250px;
+    text-align: center;
+}
+.times {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+.times button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.twomin {
+    background-image: url(./images/2min.png);
+}
+.fivemin {
+    background-image: url(./images/5min.png);
+}
+.tenmin {
+    background-image: url(./images/10min.png);
+}
+.status {
+    position: absolute;
+    width: 237px;
+    margin-left: 285px;
+    margin-top: 55px;
+}
+.play_btn {
+    width: 237px;
+    height: 237px;
+    background-image: url(./images/playbtn.png);
+    cursor: pointer;
+}
+.count {
+    font-size: 90px;
+    margin-top: 55px;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+    <title>MeditEat App</title>
+</head>
+<body>
+    <audio class="ambient">
+        <source src="./sounds/beach.mp3">
+    </audio>
+    <div class="video_overlay">
+        <video id="video" loop muted controls="">
+            <source src="./videos/sunnybeach.mp4"></source>
+        </video>
+    </div>
+    <div class="app_wrapper">
+        <div class="control_panel">
+            <div class="title">MeditEat</div>
+            <div class="descript">simple meditation space</div>
+            <div class="ambient_btn">
+                <button class="rain_btn" data-sound="./sounds/rain.mp3" data-video="./videos/raindrops.mp4"></button>
+                <button class="sunny_btn" data-sound="./sounds/beach.mp3" data-video="./videos/sunnybeach.mp4"></button>
+                <div class="title">atmosphere. //</div>
+            </div>
+            <div class="chose_time">
+                <div class="title">Choose a meditation time</div>
+                <div class="times">
+                    <button class="twomin" data-time="120"></button>
+                    <button class="fivemin" data-time="300"></button>
+                    <button class="tenmin" data-time="600"></button>
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <button class="play_btn"></button>
+            <div class="count" id="count">00:00</div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
